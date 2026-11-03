@@ -4,108 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Fit</title>
-    <!-- Pré-conexão para carregar a fonte com mais rapidez -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Link da fonte Archivo Black -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="home">
-        <div class="logo">
-            <div>
-                <a href="index.html" class="home-link">Smart Fit</a>
-            </div>
-
-            <div class="botton-menu">
-                <button class="btn-menu" type="button" aria-label="abrir menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="logo-menu">
+            <a href="index.html" class="home-link">Smart Fit</a>
+            
+            <button class="btn-menu" type="button" aria-label="abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <div class="container-nav">
-        <nav class="nav">
-            <ol class="nav-list">
-                <li><a href="https://www.smartfit.com.br/">Home</a></li>
-            </ol>
-        </nav>
-    </div>
+    <section class="hero">
+        <div class="container-title">
+            <h1>
+                <span class="text-black">SUA VIDA MAIS</span> 
+                <span class="text-yellow">SMART</span>
+            </h1>
 
-<section class="section-title">
-    <div class="container-title">
-        <div class="title-h1">
-            <h1>SUA VIDA MAIS SMART</h1>
-        </div>
+            <div class="search">
+                <a href="https://www.smartfit.com.br/academias" class="search-academy">
+                    Encontre uma academia Smart Fit perto de você
+                </a>
+            </div>
+        </div>    
+    </section>
 
-        <div class="paragraph-title">
-            <p>Encontre uma academia Smart Fit perto de você</p>
-        </div>
-    </div>    
-</section>
-
-<main class="main">
-    <section>
-        <div class="main-content">
-            <header>
-                <div>
-                    <h2>O treino é só começo</h2>
-                    <p>Na Smart Fit, você tem tudo para cuidar do seu bem-estar e ficar bem por inteiro.</p>
-                </div>
+    <main class="main">
+        <section class="main-content">
+            <header class="section-header">
+                <h2>O treino é só começo</h2>
+                <p>Na Smart Fit, você tem tudo para cuidar do seu bem-estar e ficar bem por inteiro.</p>
             </header>
-            <div>
-                <div class="articles">
-                    <article>
-                        <img src="img/treino.jpg" alt="Treino">
-                    </article>
-                    <article>
-                        <img src="img/saude.jpg" alt="Saúde">
-                    </article>
-                    <article>
-                        <img src="img/tecnologia.jpg" alt="Tecnologia">
-                    </article>
-                </div>
+            
+            <div class="articles">
+                <article><img src="img/pexels-achi-murusidze-2064615248-35649998.jpg" alt="Treino"></article>
+                <article><img src="img/pexels-anastasia-shuraeva-4944973.jpg" alt="Saúde"></article>
+                <article><img src="img/pexels-airamdphoto-13106586.jpg" alt="Tecnologia"></article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="plans">
-        <div class="div-plans">
-            <div class="h2-plans">
-                <h2>Conheça nossos planos e começe hoje!</h2>
-            </div>
-            <div class="div-article-plans">
-                <article class="article-black-plan">
-                    <div class="span-plan-black">
-                        <span>mais vantajoso</span>
-                    </div>
-                    <div class="description-plan-black">
-                        <h3 class="h3-plan-black">Plano Black</h3>
-                        <p class="paragraph-plan-black">Treine em qualquer academia da Smart Fit, seja no Brasil ou na América Latina. São +2.000 unidades em 16 países!</p>
-                    </div>
-                    <div class="prices">
-                        <div class="fidelity">
-                            <p class="paragraph-fidelity-black">12 meses de fidelidade</p>
-                        </div>
-                        <div class="advantages">
-                            <p >a partir de</p>
-                            <p class="old-price">R$ 159,90</p>
-                        </div>
-                        <div class="zero-price">
-                            <p class="00">R$ 0,00</p>
-                        </div>
-                        <p class="explanation">no 1º mês, depois R$ 159,90/mês</p>
-                        <button class="button-plan-black">Escolher plano black</button>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-</main>
+        <section class="plans">
+            <h2>Conheça nossos planos e começe hoje!</h2>
+            
+            <article class="plan-card">
+                <span class="plan-badge">mais vantajoso</span>
+                
+                <div class="plan-description">
+                    <h3>Plano Black</h3>
+                    <p>Treine em qualquer academia da Smart Fit, seja no Brasil ou na América Latina. São +2.000 unidades em 16 países!</p>
+                </div>
+                
+                <div class="plan-prices">
+                    <p class="fidelity">12 meses de fidelidade</p>
+                    <p class="label">a partir de</p>
+                    <p class="old-price">R$ 159,90</p>
+                    <p class="current-price">R$ 0,00</p>
+                    <p class="explanation">no 1º mês, depois R$ 159,90/mês</p>
+                    <button class="btn-plan">Escolher plano black</button>
+                </div>
+            </article>
+        </section>
+    </main>
     
 </body>
 </html>
